@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1></h1>
+	<hr>
+			<div class="form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="text" name="age" id="age">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "table">
+                <table class="list" id="nameList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Age</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
